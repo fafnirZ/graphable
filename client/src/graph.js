@@ -1,5 +1,4 @@
-
-const initCY = () => {
+export const initCY = () => {
   const cy = cytoscape({
     container: document.getElementById("cy"), 
     elements: [
@@ -31,5 +30,3 @@ const initCY = () => {
     }})
 }
 
-// init cytoscape instance:
-document.addEventListener('DOMContentLoaded', initCY)
