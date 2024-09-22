@@ -6,22 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Graphable</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+
+    <!-- Import Cytoscape.js from CDN -->
+    <script src="https://unpkg.com/cytoscape@3.21.1/dist/cytoscape.min.js"></script>
+
+    <!-- Link to external JS file (where Cytoscape will be used) -->
+    <script defer src="../src/index.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
+    <!-- Sidebar for interaction -->
+    <div class="sidebar">
+        <h2>Actions</h2>
+        <button id="addNode">Add Node</button>
+        <button id="removeNode">Remove Node</button>
+        <button id="resetGraph">Reset Graph</button>
+    </div>
 
-    <main>
-        <p>This is a basic HTML boilerplate with JavaScript.</p>
-    </main>
+    <!-- Main section for graph rendering -->
+    <div class="main">
+        <div id="cy"></div> <!-- Cytoscape graph container -->
+    </div>
 
     <footer>
         <p>Footer content here.</p>
     </footer>
 
-    <!-- External JavaScript file -->
-    <script src="../src/index.js"></script>
 
     <!-- Inline JavaScript -->
     <script>

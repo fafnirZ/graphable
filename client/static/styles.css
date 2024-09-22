@@ -23,8 +23,12 @@ header {
 }
 
 /* Main content styles */
-main {
-  margin: 20px 0;
+#cy {
+
+  width: 80vw;
+  height: 80vh;
+  border: 1px solid #ccc;
+
 }
 
 /* Footer styles */
